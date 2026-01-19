@@ -4,6 +4,9 @@ import * as dotenv from "dotenv";
 import "@nomicfoundation/hardhat-verify";
 // 1. 导入 gasReporter 插件（关键：注册插件并扩展 TS 类型）
 import "hardhat-gas-reporter";
+import "@openzeppelin/hardhat-upgrades"; // 注册 UUPS 升级插件
+import "@nomicfoundation/hardhat-ethers"; // 注册 ethers 集成
+import "@nomicfoundation/hardhat-ignition"; // 注册 Ignition
 
 // 加载环境变量
 dotenv.config();
